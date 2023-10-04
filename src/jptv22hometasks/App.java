@@ -25,6 +25,8 @@ public class App {
             System.out.println("0. Выход из программы");
             System.out.println("1. Конвертер температуры");
             System.out.println("2. Парсер числа");
+            System.out.println("3. Восточный календарь");
+            System.out.println("4. Тест");
             System.out.println("№ задачи: ");
             int task = this.scanner.nextInt();scanner.nextLine();
             
@@ -42,6 +44,16 @@ public class App {
                     System.out.println("Выбрана задача 2");
                     NumberParser numberparser = new NumberParser(scanner);
                     numberparser.doParser();
+                    break;
+                case 3:
+                    System.out.println("Выбрана задача 3");
+                    Calendar calendar = new Calendar(scanner);
+                    calendar.getYearName();
+                    break;
+                case 4:
+                    System.out.println("Выбрана задача 3");
+                    Test test = new Test(scanner);
+                    test.doTest();
                     break;
                 default:
                     System.out.println("Выберайте номер из списка задач!");
