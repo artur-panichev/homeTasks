@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jptv22hometasks;
+package tasks;
 
 import java.util.Scanner;
 
@@ -11,16 +11,16 @@ import java.util.Scanner;
  *
  * @author pupil
  */
-class NumberParser {
+public class NumberParser {
 
     private final Scanner scanner;
 
-    NumberParser(Scanner scanner) {
+    public NumberParser(Scanner scanner) {
          this.scanner = scanner;
     }
     public void doParser(){
         System.out.println("\n++++++++++++++++++++++");
-        System.out.println("+    Парсер чиса    +");
+        System.out.println("+    Парсер числа    +");
         System.out.println("++++++++++++++++++++++\n");
 
         System.out.print("Введите трехзначное число: ");

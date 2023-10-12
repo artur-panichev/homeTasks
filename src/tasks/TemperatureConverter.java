@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jptv22hometasks;
+package tasks;
 
 import java.util.Scanner;
 
@@ -11,11 +11,11 @@ import java.util.Scanner;
  *
  * @author pupil
  */
-class TemperatureConverter {
+public class TemperatureConverter {
 
     private final Scanner scanner;
 
-    TemperatureConverter(Scanner scanner) {
+    public TemperatureConverter(Scanner scanner) {
         this.scanner = scanner;
         
     }

@@ -5,6 +5,9 @@
  */
 package jptv22hometasks;
 
+import tasks.WeatherInYear;
+import tasks.NumberParser;
+import tasks.TemperatureConverter;
 import java.util.Scanner;
 
 /**
@@ -25,6 +28,7 @@ public class App {
             System.out.println("0. Выход из программы");
             System.out.println("1. Конвертер температуры");
             System.out.println("2. Парсер числа");
+            System.out.println("3. Погода");
             System.out.println("№ задачи: ");
             int task = this.scanner.nextInt();scanner.nextLine();
             
@@ -42,6 +46,13 @@ public class App {
                     System.out.println("Выбрана задача 2");
                     NumberParser numberparser = new NumberParser(scanner);
                     numberparser.doParser();
+                    break;
+                case 3:
+                    System.out.println("Выбрана задача 3");
+                    WeatherInYear weatherInYear;
+                    weatherInYear = new WeatherInYear();
+                    weatherInYear.run();
+                    
                     break;
                 default:
                     System.out.println("Выберайте номер из списка задач!");
